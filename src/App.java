@@ -35,7 +35,7 @@ public class App {
                         academicAbility += "Kha";
                     } else if (score < 9) {
                         academicAbility += "Gioi";
-                    } else {
+                    } else if  (score <= 10) {
                         academicAbility += "Xuat sac";
                     }
                     if (score == -1) {
