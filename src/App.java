@@ -27,19 +27,15 @@ public class App {
                     System.out.print("nhap diem : ");
                     score = Integer.parseInt(scanner.nextLine());
                     String academicAbility = "hoc luc la : ";
-                    if (score >= 0 && score < 5) {
+                    if (score < 5) {
                         academicAbility += "Yeu";
-                    }
-                    if (score >= 5 && score < 7) {
+                    } else if (score < 7) {
                         academicAbility += "Trung binh";
-                    }
-                    if (score >= 7 && score < 8) {
+                    } else if (score < 8) {
                         academicAbility += "Kha";
-                    }
-                    if (score >= 8 && score < 9) {
+                    } else if (score < 9) {
                         academicAbility += "Gioi";
-                    }
-                    if (score >= 9 && score <= 10) {
+                    } else {
                         academicAbility += "Xuat sac";
                     }
                     if (score == -1) {
