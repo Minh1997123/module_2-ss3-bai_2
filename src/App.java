@@ -7,7 +7,7 @@ public class App {
         int select = 0;
         int totalStudent = 0;
         double sum = 0;
-        double agv = 0;
+        double avg = 0;
         double maxScore = 0;
         double minScore = 10;
 
