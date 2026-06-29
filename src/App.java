@@ -18,28 +18,24 @@ public class App {
             System.out.println("3.\tthoat");
             System.out.print("lua chon cua ban : ");
 
-            int score = 0;
+            double score = 0;
             select = Integer.parseInt(scanner.nextLine());
             if (select == 1) {
                 System.out.println("***** nhap diem hoc vien (nhap -1 de dung) *****");
                 while (score != (-1)) {
 
                     System.out.print("nhap diem : ");
-                    score = Integer.parseInt(scanner.nextLine());
+                    score = Double.parseDouble(scanner.nextLine());
                     String academicAbility = "hoc luc la : ";
-                    if (score >= 0 && score < 5) {
+                    if (score < 5) {
                         academicAbility += "Yeu";
-                    }
-                    if (score >= 5 && score < 7) {
+                    } else if (score < 7) {
                         academicAbility += "Trung binh";
-                    }
-                    if (score >= 7 && score < 8) {
+                    } else if (score < 8) {
                         academicAbility += "Kha";
-                    }
-                    if (score >= 8 && score < 9) {
+                    } else if (score < 9) {
                         academicAbility += "Gioi";
-                    }
-                    if (score >= 9 && score <= 10) {
+                    } else if (score <= 10) {
                         academicAbility += "Xuat sac";
                     }
                     if (score == -1) {
